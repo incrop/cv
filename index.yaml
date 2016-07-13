@@ -1,0 +1,6 @@
+---
+block: page
+title: CV Dmitry Starostin
+content:
+  block: hello
+  content: Hello world!
