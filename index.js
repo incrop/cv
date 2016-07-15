@@ -7,9 +7,14 @@ let bemhtml = require('bem-xjst').bemhtml;
 let postcss = require('postcss');
 let pobems = require('pobems');
 
+let b = (ext) => `./build/index.${ext}`;
+
 (new Make(require('./bemaker.json'))).build().then(() => {
-    let tmpl = bemhtml.compile(fs.readFileSync('./build/index.bemhtml.js'));
+    let tmpl = bemhtml.compile(fs.readFileSync(b('bemhtml.js')));
     let bemjson = yamljs.load('index.yaml');
-    console.log(tmpl.apply(bemjson));
-    console.log(postcss([pobems]).process(fs.readFileSync('./build/index.post.css')).css)
+    let html = tmpl.apply(bemjson);
+    // let css = postcss([pobems]).process(fs.readFileSync(b('post.css')).css);
+
+    fs.writeFileSync(b('html'), html);
+    // fs.writeFileSync(b('css'), css);
 })

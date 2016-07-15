@@ -17,6 +17,7 @@
   "devDependencies": {
     "bem-xjst": "^7.0.1",
     "bemaker": "^0.2.0",
+    "http-server": "^0.9.0",
     "pobems": "^0.3.2",
     "postcss": "^5.1.0",
     "yamljs": "^0.2.8"
