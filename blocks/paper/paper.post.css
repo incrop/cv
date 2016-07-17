@@ -1,0 +1,8 @@
+:block(paper) {
+  max-width: 1024px;
+  background: #fff;
+  margin: 20px auto;
+  padding: 80px;
+  box-sizing: border-box;
+  box-shadow: 5px 5px 3px #000;
+}

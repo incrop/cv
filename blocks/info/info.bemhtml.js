@@ -12,15 +12,27 @@ block('info')(
     tag()('dd'),
     content()(() => {
       let val = applyNext();
-      switch (typeof val) {
-        case 'string': return val;
-        case 'object': return {
-          tag: 'a',
-          attrs: {href: val[1]},
-          content: val[0]
-        };
-        default: return '';
-      }
+      return Array.isArray(val)
+        ? {elem: 'link', url: val[1], content: val[0]}
+        : val;
     })
+  ),
+
+  elem('val-list')(
+    tag()('ul'),
+    content()((_, json) => json.items.map(item => ({
+      elem: 'val-list-item',
+      content: item
+    })))
+  ),
+
+  elem('val-list-item').tag()('li'),
+
+  elem('link')(
+    tag()('a'),
+    attrs()((_, json) => Object.assign(
+      {href: json.url},
+      json.url.startsWith('http') ? {target: '_blank', rel: 'noopener'} : {}
+    ))
   )
 )

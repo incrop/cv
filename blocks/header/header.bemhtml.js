@@ -3,7 +3,7 @@ block('header')(
 
     content()((_, json) => [
       json.title && {elem: 'title', content: json.title},
-      json.subtitle && {tag: 'p', content: json.subtitle}
+      json.subtitle && {elem: 'subtitle', content: json.subtitle}
     ]),
 
     elem('title').tag()('h1'),

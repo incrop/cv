@@ -2,27 +2,34 @@
 block: page
 title: CV Dmitry Starostin
 styles:
-  elem: css
-  url: index.css
-scripts:
-  elem: js
-  url: index.js
+  - elem: css
+    url: index.css
+  - elem: css
+    url: https://fonts.googleapis.com/css?family=Lato:400,700
 content:
-  - block: header
-    title: Dmitry Starostin
-    subtitle: Java/Frontend Developer
-  - block: info
-    items:
-      Date of Birth: 19 March 1988
-      Languages: English (upper-intermediate), Russian (native)
-      Location: Russia, Moscow
-      E-mail: [dmstarostin@gmail.com, mailto:dmstarostin@gmail.com]
-      Tel: [+7 925 888-68-27, tel:+7 925 888-68-27]
-      Skype: dmstarostin
-      LinkedIn: [dmstarostin, https://www.linkedin.com/in/dmstarostin]
-  - block: section
-    title: Summary
-  - block: section
-    title: Skills
-  - block: section
-    title: Work history
+  block: paper
+  content:
+    - block: photo
+    - block: header
+      title: Dmitry Starostin
+      subtitle: Java/Frontend Developer
+    - block: info
+      items:
+        Date of Birth: 19 March 1988
+        Languages:
+          elem: val-list
+          items: [English (upper-intermediate), Russian (native)]
+        Location: Russia, Moscow
+        E-mail: [dmstarostin@gmail.com, mailto:dmstarostin@gmail.com]
+        Tel: [+7 925 888-68-27, tel:+79258886827]
+        Skype: dmstarostin
+        LinkedIn: [dmstarostin, https://www.linkedin.com/in/dmstarostin]
+    - block: section
+      title: Summary
+      content: summary
+    - block: section
+      title: Skills
+      content: skills
+    - block: section
+      title: Work history
+      content: work history

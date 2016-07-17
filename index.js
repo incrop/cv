@@ -6,6 +6,9 @@ let Make = require('bemaker').Make;
 let bemhtml = require('bem-xjst').bemhtml;
 let postcss = require('postcss');
 let pobems = require('pobems');
+let autoprefixer = require('autoprefixer');
+let nested = require('postcss-nested');
+let assets = require('postcss-assets');
 
 let b = (ext) => `./build/index.${ext}`;
 
@@ -13,8 +16,11 @@ let b = (ext) => `./build/index.${ext}`;
     let tmpl = bemhtml.compile(fs.readFileSync(b('bemhtml.js')));
     let bemjson = yamljs.load('index.yaml');
     let html = tmpl.apply(bemjson);
-    // let css = postcss([pobems]).process(fs.readFileSync(b('post.css')).css);
-
+    postcss([
+      nested,  pobems, assets,
+      autoprefixer({browsers: ['> 1%', 'Last 2 versions']})
+    ]).process(fs.readFileSync(b('post.css'))).then(res => {
+      fs.writeFileSync(b('css'), res.css);
+    });
     fs.writeFileSync(b('html'), html);
-    // fs.writeFileSync(b('css'), css);
 })

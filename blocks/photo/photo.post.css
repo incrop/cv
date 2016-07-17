@@ -1,0 +1,8 @@
+:block(photo) {
+  float: left;
+  margin-right: 30px;
+
+  width: width(incrop.jpg);
+  height: height(incrop.jpg);
+  background: inline(incrop.jpg);
+}

@@ -15,11 +15,15 @@
   },
   "homepage": "https://github.com/incrop/cv#readme",
   "devDependencies": {
+    "autoprefixer": "^6.3.7",
     "bem-xjst": "^7.0.1",
     "bemaker": "^0.2.0",
     "http-server": "^0.9.0",
+    "onchange": "^2.5.0",
     "pobems": "^0.3.2",
     "postcss": "^5.1.0",
+    "postcss-assets": "^4.1.0",
+    "postcss-nested": "^1.0.0",
     "yamljs": "^0.2.8"
   }
 }

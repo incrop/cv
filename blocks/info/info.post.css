@@ -1,0 +1,44 @@
+:block(info) {
+  column-count: 2;
+  margin: 0;
+  padding: 16px 0;
+
+  &:elem(key) {
+    display: inline-block;
+    margin-right: 8px;
+    font-weight: bold;
+
+    &:after {
+      content: ':';
+    }
+  }
+
+  &:elem(val) {
+    display: inline;
+    margin: 0;
+
+    &:after {
+      display: block;
+      content: '';
+      height: 4px;
+    }
+  }
+
+  &:elem(val-list) {
+    list-style: none;
+    vertical-align: top;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+
+  &:elem(val-list-item) {
+    list-style: none;
+    padding: 0;
+  }
+
+  &:elem(link) {
+    text-decoration: none;
+    color: #00e;
+  }
+}
