@@ -1,4 +1,6 @@
 :block(header) {
+  overflow: auto;
+
   &:elem(title) {
     margin: 0;
   }

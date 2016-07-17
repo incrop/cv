@@ -9,21 +9,24 @@ styles:
 content:
   block: paper
   content:
-    - block: photo
     - block: header
-      title: Dmitry Starostin
-      subtitle: Java/Frontend Developer
-    - block: info
-      items:
-        Date of Birth: 19 March 1988
-        Languages:
-          elem: val-list
-          items: [English (upper-intermediate), Russian (native)]
-        Location: Russia, Moscow
-        E-mail: [dmstarostin@gmail.com, mailto:dmstarostin@gmail.com]
-        Tel: [+7 925 888-68-27, tel:+79258886827]
-        Skype: dmstarostin
-        LinkedIn: [dmstarostin, https://www.linkedin.com/in/dmstarostin]
+      content:
+        - block: photo
+        - elem: title
+          content: Dmitry Starostin
+        - elem: subtitle
+          content: Java/Frontend Developer
+        - block: info
+          items:
+            Date of Birth: 19 March 1988
+            Languages:
+              elem: val-list
+              items: [English (upper-intermediate), Russian (native)]
+            Location: Russia, Moscow
+            E-mail: [dmstarostin@gmail.com, mailto:dmstarostin@gmail.com]
+            Tel: [+7 925 888-68-27, tel:+79258886827]
+            Skype: dmstarostin
+            LinkedIn: [dmstarostin, https://www.linkedin.com/in/dmstarostin]
     - block: section
       title: Summary
       content:
