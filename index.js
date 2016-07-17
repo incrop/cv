@@ -17,7 +17,7 @@ let b = (ext) => `./build/index.${ext}`;
     let bemjson = yamljs.load('index.yaml');
     let html = tmpl.apply(bemjson);
     postcss([
-      nested,  pobems, assets,
+      nested, pobems, assets,
       autoprefixer({browsers: ['> 1%', 'Last 2 versions']})
     ]).process(fs.readFileSync(b('post.css'))).then(res => {
       fs.writeFileSync(b('css'), res.css);

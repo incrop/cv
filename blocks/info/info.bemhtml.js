@@ -2,8 +2,9 @@ block('info')(
   tag()('dl'),
 
   content()((_, json) => Object.keys(json.items).map(key => [
-    {elem: 'key', content: key},
-    {elem: 'val', content: json.items[key]}
+    {elem: 'key', content: key + ':'},
+    {elem: 'val', content: json.items[key]},
+    {tag: 'br'}
   ])),
 
   elem('key').tag()('dt'),

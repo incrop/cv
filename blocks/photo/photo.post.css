@@ -5,4 +5,8 @@
   width: width(incrop.jpg);
   height: height(incrop.jpg);
   background: inline(incrop.jpg);
+
+  @media (max-width: 560px) {
+    display: none;
+  }
 }
