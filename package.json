@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "description": "Curriculum vitae",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "start": "./index.js && http-server -c-0 -p 8000 | onchange 'blocks/**/*' 'index.*' -- ./index.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/incrop/cv.git"
@@ -18,6 +20,7 @@
     "autoprefixer": "^6.3.7",
     "bem-xjst": "^7.0.1",
     "bemaker": "^0.2.0",
+    "cssnano": "^3.7.3",
     "http-server": "^0.9.0",
     "onchange": "^2.5.0",
     "pobems": "^0.3.2",

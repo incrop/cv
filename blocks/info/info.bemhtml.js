@@ -14,7 +14,7 @@ block('info')(
     content()(() => {
       let val = applyNext();
       return Array.isArray(val)
-        ? {elem: 'link', url: val[1], content: val[0]}
+        ? {block: 'link', url: val[1], content: val[0]}
         : val;
     })
   ),
@@ -27,13 +27,5 @@ block('info')(
     })))
   ),
 
-  elem('val-list-item').tag()('li'),
-
-  elem('link')(
-    tag()('a'),
-    attrs()((_, json) => Object.assign(
-      {href: json.url},
-      json.url.startsWith('http') ? {target: '_blank', rel: 'noopener'} : {}
-    ))
-  )
+  elem('val-list-item').tag()('li')
 )

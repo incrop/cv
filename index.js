@@ -9,6 +9,7 @@ let pobems = require('pobems');
 let autoprefixer = require('autoprefixer');
 let nested = require('postcss-nested');
 let assets = require('postcss-assets');
+let cssnano = require('cssnano');
 
 let b = (ext) => `./build/index.${ext}`;
 
@@ -18,9 +19,10 @@ let b = (ext) => `./build/index.${ext}`;
     let html = tmpl.apply(bemjson);
     postcss([
       nested, pobems, assets,
-      autoprefixer({browsers: ['> 1%', 'Last 2 versions']})
+      autoprefixer({browsers: ['> 1%', 'Last 2 versions']}),
+      cssnano
     ]).process(fs.readFileSync(b('post.css'))).then(res => {
       fs.writeFileSync(b('css'), res.css);
     });
     fs.writeFileSync(b('html'), html);
-})
+});

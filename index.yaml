@@ -32,14 +32,53 @@ content:
       content:
         block: list
         items:
-          - >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.
-          - Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-          - Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          - Software developer. Last 5 years working mostly with web-related technologies.
+          - About 5 years of experience in server-side Java development (Servlets, JDBC, SOAP, JDBC, jUnit, Struts).
+          - Solid experience maintaining large codebase with lots of legacy code.
+          - Higher education (Specialist degree) in "Information Systems and Technologies".
+          - Passed Oracle certifications (Java 6 Programmer, Web Component Developer).
     - block: section
       title: Skills
-      content: skills
+      content:
+        block: list
+        items:
+          - Core Java 6. Currently filling the gaps at Java 7 and 8.
+          - OOP design principles and patterns (SOLID, GoF).
+          - More than 5 years practice of agile software development, specifically Scrum variations.
+          - >
+            Unix systems: process management, file system organization,
+            permissions, users, packet management, services setup.
+          - >
+            Understanding of networking: TCP/IP stack, HTTP.
+          - >
+            Some level of familiarity with various languages: C, Rust, Scala, Python, Haskell.
+          - Able to read, navigate and comprehend large unfamiliar codebase.
+          - Able to write clear, understandable code with respect to current code style and conventions.
+          - Know how to write backward compatible library level code.
+          - Familiar with FP paradigm.
+          - Expereince working in distributed and multinational team.
+
     - block: section
       title: Work history
-      content: work history
+      content:
+        - block: job
+          mods:
+            pic: yandex
+          title: Frontend Developer
+          company: Yandex
+          content:
+            - block: md
+              content:
+              - Building and maintaining internal library of common frontend components used in most Yandex projects.
+              - Using [BEM](https://en.bem.info/) development stack.
+              - Focusing on browser compatibility and API stability.
+              - >
+                Extensively using code-quality techniques: linting, TDD, design regression tests (selenium-based tools),
+                thorough code review, documenting.
+            - block: md
+              content: >
+                Working with various open-source techs and tools based on node.js: build platforms
+                ([enb](https://github.com/enb), [gulp](https://github.com/gulpjs/gulp)),
+                template engines ([bem-xjst](https://github.com/bem/bem-xjst), [bh](https://github.com/bem/bh)),
+                js frameworks ([i-bem](https://en.bem.info/platform/i-bem/), [react](https://facebook.github.io/react/)),
+                testing tools, css processors.

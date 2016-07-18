@@ -2,9 +2,9 @@
   float: left;
   margin-right: 30px;
 
-  width: width(incrop.jpg);
-  height: height(incrop.jpg);
-  background: inline(incrop.jpg);
+  width: width(pics/incrop.jpg);
+  height: height(pics/incrop.jpg);
+  background: inline(pics/incrop.jpg);
 
   @media (max-width: 560px) {
     display: none;
