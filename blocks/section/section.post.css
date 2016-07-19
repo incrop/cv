@@ -1,4 +1,6 @@
 .section {
+  page-break-inside: avoid;
+
   &__title {
     position: relative;
 

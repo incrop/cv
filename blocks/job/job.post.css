@@ -1,17 +1,49 @@
 .job {
   &__header {
+    overflow: auto;
+  }
+
+  &__pic {
+    display: inline-block;
+    float: left;
     background-repeat: no-repeat;
-    background-position: left;
-    box-sizing: border-box;
+    margin-right: 10px;
+    -webkit-print-color-adjust: exact;
   }
-  &_pic_yandex .job__header {
-    min-height: height(pics/yandex.png);
+
+  &_pic_yandex .job__pic {
+    height: height(pics/yandex.png);
+    width: width(pics/yandex.png);
     background-image: inline(pics/yandex.png);
-    padding-left: width(pics/yandex.png);
   }
-  &_pic_huawei .job__header {
-    min-height: height(pics/huawei.png);
+
+  &_pic_huawei .job__pic {
+    height: height(pics/huawei.png);
+    width: width(pics/huawei.png);
     background-image: inline(pics/huawei.png);
-    padding-left: width(pics/huawei.png);
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+
+  &__company {
+    display: none;
+    font-weight: bold;
+  }
+
+  &__dates {
+    color: #777;
+  }
+
+  @media (max-width: 340px) {
+    &__pic {
+      display: none;
+    }
+
+    &__company {
+      display: block;
+    }
   }
 }

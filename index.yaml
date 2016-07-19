@@ -57,7 +57,6 @@ content:
           - Know how to write backward compatible library level code.
           - Familiar with FP paradigm.
           - Expereince working in distributed and multinational team.
-
     - block: section
       title: Work history
       content:
@@ -66,13 +65,14 @@ content:
             pic: yandex
           title: Frontend Developer
           company: Yandex
+          url: https://yandex.com/company/
+          dates: 01.2014 – present
           content:
             - block: md
-              content:
-              - Building and maintaining internal library of common frontend components used in most Yandex projects.
-              - Using [BEM](https://en.bem.info/) development stack.
-              - Focusing on browser compatibility and API stability.
-              - >
+              content: >
+                Building and maintaining internal library of common frontend components used in most Yandex projects.
+                Using [BEM](https://en.bem.info/) development stack.
+                Focusing on browser compatibility and API stability.
                 Extensively using code-quality techniques: linting, TDD, design regression tests (selenium-based tools),
                 thorough code review, documenting.
             - block: md
@@ -82,3 +82,10 @@ content:
                 template engines ([bem-xjst](https://github.com/bem/bem-xjst), [bh](https://github.com/bem/bh)),
                 js frameworks ([i-bem](https://en.bem.info/platform/i-bem/), [react](https://facebook.github.io/react/)),
                 testing tools, css processors.
+        - block: job
+          mods:
+            pic: huawei
+          title: Software Engineer
+          company: Huawei
+          url: http://www.huawei.com/en/about-huawei
+          dates: 10.2011 – 01.2014

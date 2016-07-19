@@ -5,8 +5,11 @@
   width: width(pics/incrop.jpg);
   height: height(pics/incrop.jpg);
   background: inline(pics/incrop.jpg);
+  -webkit-print-color-adjust: exact;
 
-  @media (max-width: 560px) {
-    display: none;
+  @media not print {
+    @media (max-width: 570px) {
+      display: none;
+    }
   }
 }
