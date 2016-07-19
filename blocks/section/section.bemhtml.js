@@ -1,3 +1,5 @@
+"use strict";
+
 block('section')(
   tag()('section'),
 
@@ -7,4 +9,4 @@ block('section')(
   ]),
 
   elem('title').tag()('h2')
-)
+);

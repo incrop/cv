@@ -1,3 +1,5 @@
+"use strict";
+
 block('page')(
     wrap()((_, json) => [
         '<!DOCTYPE html>',

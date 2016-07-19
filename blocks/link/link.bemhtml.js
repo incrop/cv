@@ -1,3 +1,5 @@
+"use strict";
+
 block('link')(
   tag()('a'),
 

@@ -1,3 +1,5 @@
+"use strict";
+
 block('info')(
   tag()('dl'),
 

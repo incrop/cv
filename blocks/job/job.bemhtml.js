@@ -1,3 +1,5 @@
+"use strict";
+
 block('job').content()((_, json) => [
   {elem: 'header', content: [
     {elem: 'title', content: json.title},

@@ -1,3 +1,5 @@
+"use strict";
+
 block('md')(
   tag()('p'),
 
@@ -11,4 +13,4 @@ block('md')(
             content: text
           }))
   ))
-)
+);

@@ -1,3 +1,5 @@
+"use strict";
+
 block('list')(
   tag()('ul'),
 
