@@ -1,4 +1,6 @@
 .job {
+  margin-bottom: 28px;
+
   &__header {
     overflow: auto;
   }
@@ -28,7 +30,7 @@
     font-size: 1.2em;
   }
 
-  &__company {
+  &__pic ~ &__company {
     display: none;
     font-weight: bold;
   }
@@ -42,7 +44,7 @@
       display: none;
     }
 
-    &__company {
+    &__pic ~ &__company {
       display: block;
     }
   }

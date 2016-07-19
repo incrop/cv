@@ -1,0 +1,7 @@
+.list__title {
+  font-weight: bold;
+
+  ~ .list {
+    margin-top: 4px;
+  }
+}

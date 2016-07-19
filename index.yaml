@@ -89,3 +89,39 @@ content:
           company: Huawei
           url: http://www.huawei.com/en/about-huawei
           dates: 10.2011 – 01.2014
+          content:
+            - block: md
+              content: >
+                Developing web­ client for messaging platform of the telecom operator.
+                Local adaptation and support for RingBack Tone service, legacy
+                system that replaces default ringback tone beep to user­specified melody. Struts, SOAP, VoiceXML, PL/SQL.
+        - block: job
+          title: Java Developer
+          company: Informika
+          url: http://informika.ru/
+          dates: 02.2008 – 10.2011
+          content:
+            - block: md
+              content: >
+                Supporting [FCIOR](http://fcior.edu.ru/) – state-funded storage of interactive educational resources.
+                Developing metadata checker for educational resourses.
+                Studying semantic web techs ([RDF](https://www.w3.org/RDF/), [OWL](https://www.w3.org/TR/owl2-overview/)).
+    - block: section
+      title: Education and Certifications
+      content:
+        - block: list
+          title: Higher Education
+          items:
+            - Russian State University for Innovation Technologies and Business, 2004-2009
+        - block: list
+          title: Oracle Certifications
+          items:
+            - Oracle Certified Java 5 Web Component Developer (CX­310­083), 2011
+            - Oracle Certified Java 6 Programmer (CX­310­065), 2010
+        - block: list
+          title: Coursera MOOCs
+          items:
+            - "Algorithms: Design and Analysis, Stanford Univercity, 2016"
+            - Compilers, Stanford Univercity, 2013
+            - Functional Programming Principles in Scala, EPFL, 2012
+            - R Programming, Johns Hopkins University, 2015
