@@ -1,11 +1,11 @@
-:block(header) {
+.header {
   overflow: auto;
 
-  &:elem(title) {
+  &__title {
     margin: 0;
   }
 
-  &:elem(subtitle) {
+  &__subtitle {
     margin: 0;
     color: #777;
     font-weight: bold;

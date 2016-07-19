@@ -1,4 +1,4 @@
-:block(info) {
+.info {
   column-count: 2;
   margin: 0;
   padding: 16px 0;
@@ -9,18 +9,18 @@
     column-count: 1;
   }
 
-  &:elem(key) {
+  &__key {
     display: inline-block;
     margin-right: 8px;
     font-weight: bold;
   }
 
-  &:elem(val) {
+  &__val {
     display: inline-block;
     margin: 0;
   }
 
-  &:elem(val-list) {
+  &__val-list {
     list-style: none;
     vertical-align: top;
     display: inline-block;
@@ -28,7 +28,7 @@
     padding: 0;
   }
 
-  &:elem(val-list-item) {
+  &__val-list-item {
     list-style: none;
     padding: 0;
   }

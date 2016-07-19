@@ -23,7 +23,6 @@
     "cssnano": "^3.7.3",
     "http-server": "^0.9.0",
     "onchange": "^2.5.0",
-    "pobems": "^0.3.2",
     "postcss": "^5.1.0",
     "postcss-assets": "^4.1.0",
     "postcss-nested": "^1.0.0",

@@ -1,7 +1,8 @@
-:block(section) {
-  &:elem(title) {
+.section {
+  &__title {
     position: relative;
-    &:after: {
+
+    &:after {
       position: absolute;
       content: '';
       left: 0;
