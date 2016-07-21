@@ -34,7 +34,7 @@ content:
         block: list
         items:
           - Software developer. Last 5 years working mostly with web-related technologies.
-          - About 5 years of experience in server-side Java development (Servlets, JDBC, SOAP, JDBC, jUnit, Struts).
+          - About 5 years of experience in server-side Java (Servlets, Struts, REST/SOAP, JDBC).
           - Solid experience maintaining large codebase with lots of legacy code.
           - Higher education (Specialist degree) in "Information Systems and Technologies".
           - Passed Oracle certifications (Java 6 Programmer, Web Component Developer).
@@ -45,19 +45,19 @@ content:
         items:
           - Core Java 6. Currently filling the gaps at Java 7 and 8.
           - OOP design principles and patterns (SOLID, GoF).
-          - More than 5 years practice of agile software development, specifically Scrum variations.
+          - About 5 years using agile software development, specifically scrum variations.
           - >
             Unix systems: process management, file system organization,
             permissions, users, packet management, services setup.
           - >
             Understanding of networking: TCP/IP stack, HTTP.
+          - Git, GitHub/Stash, pull-request based review.
           - >
             Some level of familiarity with various languages: C, Rust, Scala, Python, Haskell.
           - Able to read, navigate and comprehend large unfamiliar codebase.
           - Able to write clear, understandable code with respect to current code style and conventions.
-          - Know how to write backward compatible library level code.
+          - Experience writing backward compatible library level code.
           - Familiar with FP paradigm.
-          - Expereince working in distributed and multinational team.
     - block: section
       title: Work history
       content:
@@ -71,10 +71,10 @@ content:
           content:
             - block: md
               content: >
-                Building and maintaining internal library of common frontend components used in most Yandex projects.
+                Building and maintaining the internal library of common frontend components used in most Yandex projects.
                 Using [BEM](https://en.bem.info/) development stack.
                 Focusing on browser compatibility and API stability.
-                Extensively using code-quality techniques: linting, TDD, design regression tests (selenium-based tools),
+                Extensively using code-quality techniques: CI, linting, TDD, design regression tests (selenium-based tools),
                 thorough code review, documenting.
             - block: md
               content: >
@@ -82,7 +82,7 @@ content:
                 ([enb](https://github.com/enb), [gulp](https://github.com/gulpjs/gulp)),
                 template engines ([bem-xjst](https://github.com/bem/bem-xjst), [bh](https://github.com/bem/bh)),
                 js frameworks ([i-bem](https://en.bem.info/platform/i-bem/), [react](https://facebook.github.io/react/)),
-                testing tools, css processors.
+                testing tools, CSS processors.
         - block: job
           mods:
             pic: huawei
@@ -93,9 +93,21 @@ content:
           content:
             - block: md
               content: >
-                Developing web­ client for messaging platform of the telecom operator.
-                Local adaptation and support for RingBack Tone service, legacy
-                system that replaces default ringback tone beep to user­specified melody. Struts, SOAP, VoiceXML, PL/SQL.
+                Participating in several large-scale web projects for telecom operators.
+                Working as a part of small mutinational team. Writing frontend as well as backend parts.
+            - block: md
+              content: >
+                Developing multi-protocol web client for messaging platform.
+                Writing rich user interface using AngularJS, communicating with backend services with
+                REST and SOAP.
+            - block: md
+              content: >
+                Local adaptation and maintenace of old legacy system used by several telecom operators
+                from Russia, Ukraine and Belarus.
+                Redesigning client and administration web interfaces (Java 1.4, Struts, jQuery).
+                Updating VoiceXML scripts for [IVR](https://en.wikipedia.org/wiki/Interactive_voice_response) system.
+                Modifying backend logick (Oracle PL/SQL stored procedures).
+                Writing migration documents for field engineers. Support during update process.
         - block: job
           title: Java Developer
           company: Informika
@@ -122,7 +134,7 @@ content:
         - block: list
           title: Coursera MOOCs
           items:
-            - "Algorithms: Design and Analysis, Stanford Univercity, 2016"
-            - Compilers, Stanford Univercity, 2013
+            - "Algorithms: Design and Analysis, Stanford University, 2016"
+            - Compilers, Stanford University, 2013
             - Functional Programming Principles in Scala, EPFL, 2012
             - R Programming, Johns Hopkins University, 2015
