@@ -30,6 +30,10 @@
     font-size: 1.2em;
   }
 
+  &__pic ~ &__title {
+    margin-top: 8px;
+  }
+
   &__pic ~ &__company {
     display: none;
     font-weight: bold;
@@ -42,6 +46,10 @@
   @media (max-width: 340px) {
     &__pic {
       display: none;
+    }
+
+    &__pic ~ &__title {
+      margin-top: 0;
     }
 
     &__pic ~ &__company {
