@@ -11,6 +11,10 @@ block('page')(
                     elem: 'head',
                     content: [
                         {tag: 'meta', attrs: {charset: 'utf-8'}},
+                        {tag: 'meta', attrs: {
+                          name: 'viewport',
+                          content: json.viewport || 'width=device-width,initial-scale=1'
+                        }},
                         {tag: 'meta',attrs: {
                             'http-equiv': 'X-UA-Compatible',
                             content: 'IE=edge'
