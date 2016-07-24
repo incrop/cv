@@ -5,6 +5,7 @@ block('page')(
         '<!DOCTYPE html>',
         {
             tag: 'html',
+            attrs: {lang: json.lang || 'en'},
             content: [
                 {
                     elem: 'head',
@@ -17,7 +18,7 @@ block('page')(
                         {tag: 'title', content: json.title},
                         json.head,
                         json.styles,
-                        json.favicon && {elem: 'favicon', url: json.favicon }
+                        json.favicon && {elem: 'favicon', url: json.favicon}
                     ]
                 },
                 json
