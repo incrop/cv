@@ -34,7 +34,7 @@ content:
         block: list
         items:
           - Software developer. Last 5 years working mostly with web-related technologies.
-          - About 5 years of experience in server-side Java (Servlets, Struts, REST/SOAP, JDBC).
+          - About 5 years of experience in server-side Java (Servlets, REST/SOAP, JDBC).
           - Solid experience maintaining large codebase with lots of legacy code.
           - Higher education (Specialist degree) in "Information Systems and Technologies".
           - Passed Oracle certifications (Java 6 Programmer, Web Component Developer).
@@ -53,7 +53,9 @@ content:
             Understanding of networking: TCP/IP stack, HTTP.
           - Git, GitHub/Stash, pull-request based review.
           - >
-            Some level of familiarity with various languages: C, Rust, Scala, Python, Haskell.
+            Frontend: HTML/CSS/JS, node.js infrastructure, component approach.
+          - >
+            Some level of familiarity with various languages: C, Rust, Scala, Python.
           - Able to read, navigate and comprehend large unfamiliar codebase.
           - Able to write clear, understandable code with respect to current code style and conventions.
           - Experience writing backward compatible library level code.
@@ -74,11 +76,13 @@ content:
                 Building and maintaining the internal library of common frontend components used in most Yandex projects.
                 Using [BEM](https://en.bem.info/) development stack.
                 Focusing on browser compatibility and API stability.
-                Extensively using code-quality techniques: CI, linting, TDD, design regression tests (selenium-based tools),
-                thorough code review, documenting.
+                Extensively using code-quality techniques: CI, linting, TDD, design regression tests
+                (using selenium-based tools: [1](https://github.com/webdriverio/webdriverio),
+                [2](https://github.com/gemini-testing/gemini), [3](https://github.com/gemini-testing/hermione)),
+                thorough code review, writing documentation and jsdoc.
             - block: md
               content: >
-                Working with various open-source techs and tools based on node.js: build platforms
+                Working with various open-source frontend techs and tools: build platforms
                 ([enb](https://github.com/enb), [gulp](https://github.com/gulpjs/gulp)),
                 template engines ([bem-xjst](https://github.com/bem/bem-xjst), [bh](https://github.com/bem/bh)),
                 js frameworks ([i-bem](https://en.bem.info/platform/i-bem/), [react](https://facebook.github.io/react/)),
@@ -94,30 +98,30 @@ content:
             - block: md
               content: >
                 Participating in several large-scale web projects for telecom operators.
-                Working as a part of small mutinational team. Writing frontend as well as backend parts.
+                Working as a part of the small multinational team. Writing frontend as well as backend components.
             - block: md
               content: >
-                Developing multi-protocol web client for messaging platform.
+                Developing web client for the telecom messaging platform.
                 Writing rich user interface using AngularJS, communicating with backend services with
                 REST and SOAP.
             - block: md
               content: >
-                Local adaptation and maintenace of old legacy system used by several telecom operators
-                from Russia, Ukraine and Belarus.
+                Local adaptation and maintenance of the old legacy system used by several telecom operators
+                from Russia, Ukraine, and Belarus.
                 Redesigning client and administration web interfaces (Java 1.4, Struts, jQuery).
                 Updating VoiceXML scripts for [IVR](https://en.wikipedia.org/wiki/Interactive_voice_response) system.
-                Modifying backend logick (Oracle PL/SQL stored procedures).
-                Writing migration documents for field engineers. Support during update process.
+                Modifying backend logic (Oracle PL/SQL stored procedures).
+                Writing migration documents for field engineers. Support during the update process.
         - block: job
           title: Java Developer
-          company: Informika
+          company: State Research Institute Informika
           url: http://informika.ru/
           dates: 02.2008 – 10.2011
           content:
             - block: md
               content: >
                 Supporting [FCIOR](http://fcior.edu.ru/) – state-funded storage of interactive educational resources.
-                Developing metadata checker for educational resourses.
+                Developing metadata checker for educational resources.
                 Studying semantic web techs ([RDF](https://www.w3.org/RDF/), [OWL](https://www.w3.org/TR/owl2-overview/)).
     - block: section
       title: Education and Certifications
@@ -125,16 +129,17 @@ content:
         - block: list
           title: Higher Education
           items:
-            - Russian State University for Innovation Technologies and Business, 2004-2009
+            - Russian State University for Innovation Technologies and Business, 2004-2009, Diploma with honors.
         - block: list
           title: Oracle Certifications
           items:
-            - Oracle Certified Java 5 Web Component Developer (CX­310­083), 2011
-            - Oracle Certified Java 6 Programmer (CX­310­065), 2010
+            - Oracle Certified Java 5 Web Component Developer (CX­310­083), 2011.
+            - Oracle Certified Java 6 Programmer (CX­310­065), 2010.
         - block: list
           title: Coursera MOOCs
           items:
-            - "Algorithms: Design and Analysis, Stanford University, 2016"
-            - Compilers, Stanford University, 2013
-            - Functional Programming Principles in Scala, EPFL, 2012
+            - >
+              Algorithms: Design and Analysis, Stanford University, 2016.
+            - Compilers, Stanford University, 2013.
+            - Functional Programming Principles in Scala, EPFL, 2012.
             - R Programming, Johns Hopkins University, 2015
