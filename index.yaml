@@ -28,6 +28,13 @@ content:
             Tel: [+7 925 888-68-27, tel:+79258886827]
             Skype: dmstarostin
             LinkedIn: [dmstarostin, https://www.linkedin.com/in/dmstarostin]
+            StackOverflow: [incrop, stackoverflow.com/users/504537/incrop]
+            GitHub: [incrop, https://github.com/incrop]
+        - block: md
+          mods:
+            print-only: true
+          content: >
+            Up-to-date version of this CV could be found [here](https://incrop.ovh/cv/).
     - block: section
       title: Summary
       content:
@@ -47,17 +54,18 @@ content:
           - OOP design principles and patterns (SOLID, GoF).
           - About 5 years using agile software development, specifically scrum variations.
           - >
-            Unix systems: process management, file system organization,
-            permissions, users, packet management, services setup.
-          - >
             Understanding of networking: TCP/IP stack, HTTP.
           - Git, GitHub/Stash, pull-request based review.
           - >
-            Frontend: HTML/CSS/JS, node.js infrastructure, component approach.
+            Frontend: HTML/CSS/JS, node.js environment, component approach.
+          - >
+            Used several RDBMS in productin: Oracle, Postgres, MySQL.
+          - >
+            Unix systems: process management, file system organization, permissions, packet management. Ubuntu user.
           - >
             Some level of familiarity with various languages: C, Rust, Scala, Python.
           - Able to read, navigate and comprehend large unfamiliar codebase.
-          - Able to write clear, understandable code with respect to current code style and conventions.
+          - Able to write clear, understandable code adhering to current code style and conventions.
           - Experience writing backward compatible library level code.
           - Familiar with FP paradigm.
     - block: section
@@ -143,3 +151,4 @@ content:
             - Compilers, Stanford University, 2013.
             - Functional Programming Principles in Scala, EPFL, 2012.
             - R Programming, Johns Hopkins University, 2015
+    - block: timestamp
