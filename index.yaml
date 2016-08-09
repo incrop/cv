@@ -2,6 +2,8 @@
 block: page
 title: CV Dmitry Starostin
 favicon: /favicon.ico
+head:
+  block: counter
 styles:
   - elem: css
     url: index.css
