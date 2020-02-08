@@ -1,0 +1,10 @@
+.md_print-only {
+  display: none;
+
+  @media print {
+    display: block;
+    margin: 0;
+    font-size: .8em;
+    color: #777;
+  }
+}

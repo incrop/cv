@@ -4,7 +4,7 @@
   "description": "Curriculum vitae",
   "main": "index.js",
   "scripts": {
-    "start": "./index.js && http-server -c-0 -p 8000 | onchange 'blocks/**/*' 'index.*' -- ./index.js"
+    "start": "./build.js && http-server -c-0 -p 8000 | onchange 'blocks/**/*' 'index.*' -- ./build.js"
   },
   "repository": {
     "type": "git",

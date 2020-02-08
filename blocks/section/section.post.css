@@ -3,6 +3,7 @@
 
   &__title {
     position: relative;
+    margin-bottom: 28px;
 
     &:after {
       position: absolute;
