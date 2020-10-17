@@ -2,7 +2,7 @@
 
 block('page')(
     wrap()((_, json) => [
-        '<!DOCTYPE html>',
+        {html: '<!DOCTYPE html>'},
         {
             tag: 'html',
             attrs: {lang: json.lang || 'en'},
