@@ -35,13 +35,13 @@ content:
           mods:
             print-only: true
           content: >
-            Up-to-date version of this CV could be found here: https://incrop.ovh/cv/.
+            Up-to-date version of this CV could be found at https://incrop.ovh/cv/.
     - block: section
       title: Summary
       content:
         block: list
         items:
-          - Software developer/engineer. Mostly Java/Web stack.
+          - Software developer/engineer. Mostly Java backend, also worked on web/node.js stack.
           - Solid experience maintaining large codebase with lots of legacy code.
           - Higher education (Specialist degree) in "Information Systems and Technologies".
     - block: section
@@ -49,14 +49,14 @@ content:
       content:
         block: list
         items:
-          - About 9 years working in teams on commercial/enterprise production projects.
-          - Solid Java 8, have experience with Java 11.
+          - Working on production commercial/enterprise projects since 2011.
+          - Java 8 and 11.
           - Understanding of software development lifecycle and CI/CD.
           - Able to read, navigate and understand large unfamiliar codebase.
           - Experience writing backward compatible library level code.
           - Git, GitHub/Bitbucket, pull-request based review.
           - >
-            Eperience with several RDBMS in productin: Oracle, Postgres, MySQL.
+            Eperience with several RDBMS in production: Oracle, Postgres, MySQL.
           - >
             Understanding of networking: TCP/IP stack, HTTP.
           - >
@@ -78,25 +78,32 @@ content:
           content:
             - block: md
               content: >
-                Developing and supporting mature (~9 years since first commit) internal system for equity settlement.
+                Worked in large muti-national (US/Russia/HK/JP) team.
+                Developing and supporting production-critical system for equity booking and allocation,
+                written in Java 8 using in-house framework for in-memory processing (Axiom)
             - block: md
               content: >
-                Distributed (US/EU/APAC), multi-component, high throughput (up to 1000 events/sec),
-                available 24/5, fault tolerant, both batch and realtime processing.
+                __System details:__ distributed (US/EU/APAC), relatively high throughput (up to 1000 events/sec),
+                available 24/5, fault tolerant, supporting batching and realtime processing.
                 Integration with lots of internal upstream and downstream systems.
-                Written in Java 8 using in-house framework for in-memory processing, Oracle for persistence.
+                Oracle for persistence.
             - block: md
               content: >
-                Working in large distributed multinational team. Clarifying business requirements,
+                __Responsibilities:__ clarifying business requirements,
                 implementing features, fixing bugs, writing unit and integration tests, code review,
                 writing release instructions and other documentation, mentoring dev and QA colleagues.
-                Providing L3 support during work hours and production releases on weekends.
+                Providing L3 support (on-call and release rotation).
             - block: md
               content: >
-                Experience with building software development pipeline
-                (bitbucket → teamcity → artifactory → urbancode deploy).
-                Maintaining repository with CI tools: cutom maven plugins, bitbucket bot.
-                Some experience with openshift (container orchestration from Red Hat à la kubernetes).
+                __Technologies/Tools:__ Java 8, Oracle SQL, Bitbucket, Teamcit, IBM urbancode deploy, Ansible, bash scripting.
+            - block: md
+              content: >
+                __Learned:__ collecting business requirements for vaguely stated tasks, dealing with bank's bureaucracy, architecture basics,
+                implementing high-performance code, DevOps basics, got training on cloud stacks (RedHat Openshift, Google Cloud Platform).
+            - block: md
+              content: >
+                __Achievments:__ built software development pipeline (source to deploy), developed several CI tools: cutom maven plugins,
+                bitbucket build trigger bot, pushed several critical fixes into Axiom framework, contributed into framework .
         - block: job
           mods:
             pic: yandex
@@ -107,36 +114,39 @@ content:
           content:
             - block: md
               content: >
-                Supporting internal library of common frontend components used by many Yandex projects.
-                Using [BEM](https://en.bem.info/) development stack.
-                Focusing on browser compatibility and API stability.
-                Extensively using code-quality techniques: CI, linting, TDD, regression tests
-                (using selenium-based tools: [1](https://github.com/webdriverio/webdriverio),
-                [2](https://github.com/gemini-testing/gemini), [3](https://github.com/gemini-testing/hermione)),
+                Got hired after graduating [Yandex webdev school](https://yandex.ru/promo/academy/shri).
+                Worked in the team supporting shared internal library of common frontend components (Lego).
+                Used code quality tools and techniques extensively: CI, linting, TDD, regression tests,
                 thorough code review, writing documentation and jsdoc.
+            - block: md
+              content: >
+                __Technologies/Tools:__ [BEM](https://en.bem.info/) development stack, node.js, jQuery, selenium based tools
+                ([1](https://github.com/webdriverio/webdriverio), [2](https://github.com/gemini-testing/gemini),
+                [3](https://github.com/gemini-testing/hermione)).
+            - block: md
+              content: >
+                __Learned:__ writing backward compatibile library code, supporting multiple browsers,
+                communicating with designers and clients from other departments.
+            - block: md
+              content: >
+                __Achievments:__ developed jsfiddle-like playground to quickly test library components,
+                created several components by designers prototypes (yellow search arrow is still on the [main page](https://yandex.ru/)).
         - block: job
           mods:
             pic: huawei
           title: Software Engineer
           company: Huawei
-          url: http://www.huawei.com/en/about-huawei
+          url: https://www.huawei.com/en/corporate-information
           dates: 10.2011 – 01.2014
           content:
             - block: md
               content: >
-                Developed applications for telecom operators (web stack + java/oracle backend).
-                Working as a part of the small multinational team.
+                Worked as a part of small dev team in Moscow Huawei office. Developed, localized and supported several applications
+                for telecom operators in Russia/Ukraine/Belarus. Provided L3 support (on-call and release rotation).
             - block: md
               content: >
-                Web client for the telecom messaging platform.
-                Rich frontend with AngilarJS 1, aceessing backend services with REST and SOAP.
-            - block: md
-              content: >
-                Localization and maintenance of legacy system used by telecom operators in Russia/Ukraine/Belarus.
-                Rewriting of client-facing and internal web interfaces (Java 1.4, Struts, jQuery).
-                Working with VoiceXML scripts for [IVR](https://en.wikipedia.org/wiki/Interactive_voice_response) system.
-                Oracle PL/SQL stored procedures on backend.
-                Writing documentation for on-site engineers. Support during releases.
+                __Technologies/Tools:__ Java 7, Struts, Oracle PL/SQL stored procedures, AngilarJS 1, jQuery, REST/SOAP, 
+                VoiceXML scripts for [IVR](https://en.wikipedia.org/wiki/Interactive_voice_response).
         - block: job
           title: Java Developer
           company: State Research Institute Informika
@@ -145,9 +155,9 @@ content:
           content:
             - block: md
               content: >
-                Supporting [FCIOR](http://fcior.edu.ru/) – state-funded storage of interactive educational resources.
-                Developing metadata checker for educational resources.
-                Studying semantic web techs ([RDF](https://www.w3.org/RDF/), [OWL](https://www.w3.org/TR/owl2-overview/)).
+                Supported [FCIOR](http://fcior.edu.ru/) – state-funded storage of interactive educational resources.
+                Learned Java, developed automated validator for educational resources.
+                Studied semantic web techs ([RDF](https://www.w3.org/RDF/), [OWL](https://www.w3.org/TR/owl2-overview/)).
     - block: section
       title: Education and Certifications
       content:
