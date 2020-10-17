@@ -4,6 +4,7 @@
   "description": "Curriculum vitae",
   "main": "index.js",
   "scripts": {
+    "build": "gulp",
     "start": "gulp && http-server -c-0 -p 8000 | onchange 'blocks/**/*' 'index.*' -- gulp"
   },
   "repository": {

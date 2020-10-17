@@ -1,0 +1,22 @@
+name: Deploy cv
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v1
+      with:
+        node-version: 12.x
+    - run: npm ci
+    - run: npm run build --if-present
+    - run: |
+        (umask 077; echo "${{ secrets.DEPLOY_KEY }}" > id_rsa)
+        scp -o StrictHostKeyChecking=no -i id_rsa -r dist/* "${{ secrets.DEPLOY_DEST }}"
