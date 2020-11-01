@@ -177,4 +177,10 @@ content:
               Algorithms: Design and Analysis, Stanford University, 2016.
             - Compilers, Stanford University, 2013.
             - Functional Programming Principles in Scala, EPFL, 2012.
+        - block: list
+          title: Other
+          items:
+            - block: md
+              content: >
+                [Google foobar](https://google.com/foobar/) challenge (5/5 levels), 2020
     - block: timestamp
