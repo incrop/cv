@@ -173,6 +173,7 @@ content:
         - block: list
           title: Coursera MOOCs
           items:
+            - Algorithms, Part I, Princeton University, 2020.
             - >
               Algorithms: Design and Analysis, Stanford University, 2016.
             - Compilers, Stanford University, 2013.
