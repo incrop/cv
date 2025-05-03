@@ -1,0 +1,256 @@
+.header {
+  overflow: auto
+}
+
+.header__title {
+  margin: 0
+}
+
+.header__subtitle {
+  margin: 0;
+  color: #777;
+  font-weight: 700
+}
+
+.info {
+  -moz-column-count: 2;
+  column-count: 2;
+  margin: 0;
+  padding: 16px 0;
+  display: block;
+  font-size: 1em
+}
+
+@media (max-width:760px) {
+  .info {
+    -moz-column-count: 1;
+    column-count: 1
+  }
+}
+
+.info__key {
+  display: inline-block;
+  margin-right: 8px;
+  font-weight: 700
+}
+
+.info__val {
+  display: inline-block;
+  margin: 0
+}
+
+.info__val-list {
+  list-style: none;
+  vertical-align: top;
+  display: inline-block;
+  margin: 0;
+  padding: 0
+}
+
+.info__val-list-item {
+  list-style: none;
+  padding: 0
+}
+
+.job {
+  margin-bottom: 28px
+}
+
+.job__header {
+  overflow: auto;
+  padding-bottom: 10px
+}
+
+.job__pic {
+  display: inline-block;
+  float: left;
+  background-repeat: no-repeat;
+  margin-right: 15px;
+  -webkit-print-color-adjust: exact;
+  color-adjust: exact
+}
+
+.job__info {
+  display: inline-block
+}
+
+.job_pic_wolt .job__pic {
+  height: 80px;
+  width: 80px;
+  background-image: url(pics/wolt.png);
+}
+
+.job_pic_dbtc .job__pic {
+  height: 70px;
+  width: 70px;
+  background-image: url(pics/dbtc.png);
+}
+
+.job_pic_yandex .job__pic {
+  height: 50px;
+  width: 100px;
+  background-image: url(pics/yandex.png);
+}
+
+.job_pic_huawei .job__pic {
+  height: 60px;
+  width: 60px;
+  background-image: url(pics/huawei.png);
+}
+
+.job__title {
+  font-weight: 700;
+  font-size: 1.2em
+}
+
+.job__pic~.job__title {
+  margin-top: 8px
+}
+
+.job__dates {
+  color: #777
+}
+
+@media (max-width:340px) {
+  .job__pic {
+    display: none
+  }
+
+  .job__pic~.job__title {
+    margin-top: 0
+  }
+}
+
+.link {
+  text-decoration: none;
+  color: #00e
+}
+
+.list__title {
+  font-weight: 700
+}
+
+.list__title~.list {
+  margin-top: 4px
+}
+
+.md_print-only {
+  display: none
+}
+
+@media print {
+  .md_print-only {
+    display: block;
+    margin: 0;
+    font-size: .8em;
+    color: #777
+  }
+}
+
+.page {
+  margin: 0;
+  padding: 0;
+  background-color: #2d2d2d;
+  font-family: Lato, sans-serif
+}
+
+@media print {
+  .page {
+    background-color: #fff
+  }
+}
+
+.paper {
+  max-width: 1024px;
+  background: #fff;
+  margin: 20px auto;
+  padding: 60px 80px;
+  box-sizing: border-box;
+  box-shadow: 5px 5px 3px #000
+}
+
+@media (max-width:1024px) {
+  .paper {
+    margin: 0;
+    padding: 30px 40px
+  }
+}
+
+@media (max-width:570px) {
+  .paper {
+    padding: 15px 20px
+  }
+}
+
+@media print {
+  .paper {
+    box-shadow: none
+  }
+}
+
+.photo {
+  float: left;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  width: 140px;
+  height: 140px;
+  background: url(pics/incrop.jpg);
+  -webkit-print-color-adjust: exact;
+  color-adjust: exact
+}
+
+@media not print {
+  @media (max-width:570px) {
+    .photo {
+      float: none
+    }
+  }
+}
+
+.md {
+  margin-bottom: 5px;
+}
+
+.md_print-only {
+  display: none
+}
+
+@media print {
+  .md_print-only {
+    display: block;
+    margin: 0;
+    font-size: .8em;
+    color: #777
+  }
+}
+
+.section {
+  page-break-inside: avoid
+}
+
+.section__title {
+  position: relative;
+  margin-bottom: 28px
+}
+
+.section__title:after {
+  position: absolute;
+  content: '';
+  left: 0;
+  right: 0;
+  bottom: -5px;
+  height: 0;
+  border-bottom: 3px solid #002060
+}
+
+.timestamp {
+  font-size: .8em;
+  color: #777;
+  text-align: right
+}
+
+@media print {
+  .timestamp {
+    display: none
+  }
+}

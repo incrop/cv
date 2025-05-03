@@ -1,9 +1,0 @@
-.timestamp {
-  font-size: .8em;
-  color: #777;
-  text-align: right;
-
-  @media print {
-    display: none;
-  }
-}
